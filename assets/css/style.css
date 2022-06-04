@@ -1,6 +1,296 @@
+html, body{
+    background: #161616;
+}
+
 .hero{
     background: url('../img/gradient.png');
     padding: 150px 0;
     background-size: cover;
     background-position: center center;
 }
+
+.about{
+    position: relative;
+    background: url("../img/bg-features.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding: 80px 58px 60px;
+}
+
+/* timeline */
+
+.timeline {
+    margin: 50px 0;
+    margin-left: -30px;
+    position: relative;
+    max-width: 100%;
+  }
+  .timeline:before {
+    content: '';
+    margin-left: -1px;
+    position: absolute;
+    border: 2px dashed #8C0AA0;
+    top: 0;
+    left: 2em;
+    width: 2px;
+    height: 100%;
+  }
+  
+  .timeline-event {
+    position: relative;
+    margin-left: -32px;
+  }
+  .timeline-event:hover .timeline-event-icon {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: #a83279;
+  }
+  .timeline-event:hover .timeline-event-thumbnail {
+    -moz-box-shadow: inset 40em 0 0 0 #a83279;
+    -webkit-box-shadow: inset 40em 0 0 0 #a83279;
+    box-shadow: inset 40em 0 0 0 #a83279;
+  }
+  
+  .timeline-event-copy {
+    padding: 2em;
+    color: #fff;
+    position: relative;
+    top: -1.875em;
+    left: 4em;
+    width: 100%;
+    background: #37123D;
+    margin-top: 50px;
+  }
+  .timeline-event-copy h3 {
+    font-size: 1.75em;
+  }
+  .timeline-event-copy h4 {
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+  }
+  .timeline-event-copy strong {
+    font-weight: 700;
+  }
+  .timeline-event-copy p:not(.timeline-event-thumbnail) {
+    padding-bottom: 1.2em;
+  }
+  
+  .timeline-event-icon {
+    -moz-transition: -moz-transform 0.2s ease-in;
+    -o-transition: -o-transform 0.2s ease-in;
+    -webkit-transition: -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #8C0AA0;
+    outline: 10px solid white;
+    display: block;
+    margin: 0.5em 0.5em 0.5em -0.5em;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 1em;
+    height: 1em;
+  }
+  
+  .timeline-event-thumbnail {
+    -moz-transition: box-shadow 0.5s ease-in 0.1s;
+    -o-transition: box-shadow 0.5s ease-in 0.1s;
+    -webkit-transition: box-shadow 0.5s ease-in;
+    -webkit-transition-delay: 0.1s;
+    transition: box-shadow 0.5s ease-in 0.1s;
+    color: white;
+    font-size: 0.75em;
+    background-color: black;
+    -moz-box-shadow: inset 0 0 0 0em #ef795a;
+    -webkit-box-shadow: inset 0 0 0 0em #ef795a;
+    box-shadow: inset 0 0 0 0em #ef795a;
+    display: inline-block;
+    margin-bottom: 1.2em;
+    padding: 0.25em 1em 0.2em 1em;
+  }
+
+/* team */
+
+.creation__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    margin-top: 57px;
+  }
+  
+  .box-nft {
+    width: calc(33.33% - 30px);
+    margin: 0 15px;
+    padding: 29px;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+    margin-bottom: 30px;
+    background: #07000A;
+    border: 2.10333px solid rgba(218, 72, 255, 0.4);
+    box-shadow: inset 0px 0px 57.3156px rgba(218, 72, 255, 0.6);
+    clip-path: polygon(0 28px, 28px 0, calc(100% - 28px) 0, 100% 28px, 100% calc(100% - 28px), calc(100% - 28px) 100%, 28px 100%, 0% calc(100% - 28px), 0% 28px);
+  }
+  @media only screen and (max-width: 1024px) {
+    .box-nft {
+      width: calc(50% - 30px);
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .box-nft {
+      width: calc(100% - 30px);
+    }
+  }
+  .box-nft span {
+    position: absolute;
+    font-size: 68px;
+    transition: 0.3s all ease-in-out;
+  }
+  .box-nft span::before {
+    color: rgba(192, 4, 222, 0.2);
+    transition: 0.3s all ease-in-out;
+  }
+  .box-nft span:nth-child(1) {
+    left: -1px;
+    top: -1px;
+  }
+  .box-nft span:nth-child(2) {
+    right: -1px;
+    top: -1px;
+  }
+  .box-nft span:nth-child(3) {
+    right: -1px;
+    bottom: -1px;
+  }
+  .box-nft span:nth-child(4) {
+    left: -1px;
+    bottom: -1px;
+  }
+  .box-nft .box-nft__main {
+    position: relative;
+    overflow: hidden;
+  }
+  .box-nft .box-nft__main img {
+    width: 100%;
+    clip-path: polygon(0 28px, 28px 0, calc(100% - 28px) 0, 100% 28px, 100% calc(100% - 28px), calc(100% - 28px) 100%, 28px 100%, 0% calc(100% - 28px), 0% 28px);
+  }
+  .box-nft .box-nft__main .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(92, 3, 106, 0.5);
+    backdrop-filter: blur(14px);
+    text-align: center;
+    padding: 26px;
+  }
+  .box-nft .box-nft__main .content .title {
+    font-family: "Zen Dots";
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  /* .box-nft:hover {
+    border: 2.10333px solid rgba(218, 72, 255, 0.6);
+    transform: translateY(-15px);
+  } */
+  .box-nft:hover span::before {
+    color: #C004DE;
+  }
+
+  /* document */
+
+  .document.style-1 {
+    padding: 59px 0;
+  }
+  .document.style-1 .block-text .heading {
+    font-family: "Zen Dots";
+    font-weight: 400;
+  }
+  .document.style-1 .block-text .desc {
+    color: rgba(246, 246, 246, 0.8);
+  }
+  .document.style-1 .document__main {
+    background: url("../img/bg-document.png") no-repeat;
+    background-position: top center;
+    padding: 61px 64px;
+  }
+  @media only screen and (max-width: 1200px) {
+    .document.style-1 .document__main {
+      background-size: cover;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .document.style-1 .document__main {
+      padding: 61px 15px;
+    }
+  }
+  .document.style-1 .document__content {
+    display: flex;
+    margin: 0 -15px;
+    margin-top: 24px;
+  }
+  @media only screen and (max-width: 1024px) {
+    .document.style-1 .document__content {
+      flex-wrap: wrap;
+    }
+  }
+  .document.style-1 .box-document {
+    background: url("../img/bg-document-box.png") no-repeat;
+    background-position: top center;
+    padding: 16px 20px 16px 24px;
+    margin: 0 15px;
+    width: calc(25% - 30px);
+    transition: 0.3s all ease-in-out;
+  }
+  @media only screen and (max-width: 1024px) {
+    .document.style-1 .box-document {
+      width: calc(50% - 30px);
+      margin-bottom: 30px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .document.style-1 .box-document {
+      width: calc(100% - 30px);
+    }
+  }
+  .document.style-1 .box-document .content {
+    padding: 0 20px;
+    background: rgba(192, 4, 222, 0.1);
+    color: #eee;
+    text-align: center;
+    height: 144px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 9px;
+    clip-path: polygon(0 28px, 28px 0, calc(100% - 28px) 0, 100% 28px, 100% calc(100% - 28px), calc(100% - 28px) 100%, 28px 100%, 0% calc(100% - 28px), 0% 28px);
+  }
+  .document.style-1 .box-document .content .title {
+    font-family: "Zen Dots";
+    font-weight: 400;
+  }
+  .document.style-1 .box-document .content .icon {
+    opacity: 0;
+    visibility: hidden;
+    margin-bottom: -66px;
+    transition: 0.3s all ease-in-out;
+  }
+  .document.style-1 .box-document:hover {
+    margin-top: -15px;
+  }
+  .document.style-1 .box-document:hover .content {
+    padding-top: 5px;
+  }
+  .document.style-1 .box-document:hover .content .icon {
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 0;
+  }
