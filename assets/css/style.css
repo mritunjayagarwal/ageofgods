@@ -1,0 +1,6 @@
+.hero{
+    background: url('../img/gradient.png');
+    padding: 150px 0;
+    background-size: cover;
+    background-position: center center;
+}
